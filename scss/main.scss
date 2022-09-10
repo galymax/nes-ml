@@ -5,6 +5,7 @@
 @import "../node_modules/nes.css/scss/icons/_index.scss";
 @import "../node_modules/nes.css/scss/pixel-arts/_index.scss";
 
+
 body {
     margin: 2rem 0.5rem;
     padding: 0;
@@ -13,4 +14,34 @@ body {
 box {
     @extend .nes-container;
     @extend .with-title;
+    display: block;
+    margin-bottom: 2.5rem;
+
+    & > box-title {
+        @extend .title;
+    }
+}
+
+headline {
+    @extend h1;
+    display: block;
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* avatars */
+$avatars: ash, mario, pokeball, bulbasaur, charmander, squirtle, kirby;
+
+@each $avatar in $avatars {
+  #{$avatar} {
+    @extend .nes-#{$avatar};
+    margin: 1em 0;
+  }
+}
+
+bubble {
+    @extend .nes-balloon;
+    @extend .from-left;
+    @extend .nes-pointer;
 }
