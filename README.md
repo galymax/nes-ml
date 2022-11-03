@@ -2,6 +2,8 @@
 
 Simple markup language as enty point to learning HTML
 
+It was originally designed for a one-hour web dev workshop for people with no prior coding experience.
+
 ## Usage
 
 ## Tags
@@ -23,6 +25,11 @@ Same as `box` but all text is centered
 
 
 ## Compatibility
+Tested on
+- Chrome ✔
+- Firefox ✔
+- Safari ✔
+- Edge ✔
 
 ## How it works
 - Styling is based on [NES.css](https://nostalgic-css.github.io/NES.css/)
