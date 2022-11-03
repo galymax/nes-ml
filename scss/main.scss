@@ -19,15 +19,27 @@ box {
 
     & > box-title {
         @extend .title;
+        font-weight: 700;
     }
+}
+
+intro {
+    @extend box;
+    text-align: center;
 }
 
 headline {
     @extend h1;
     display: block;
     font-size: 2em;
-    text-align: center;
     font-weight: bold;
+}
+
+message {
+    @extend .nes-container;
+    @extend .is-rounded;
+    @extend .is-dark;
+    display: block;
 }
 
 /* avatars */
@@ -44,4 +56,48 @@ bubble {
     @extend .nes-balloon;
     @extend .from-left;
     @extend .nes-pointer;
+}
+
+%progress {
+    display: block;
+    margin-top: -78px;
+    margin-bottom: 19px;
+    padding: 21px 0 32px;
+
+    &::before {
+        content: " ";
+        @extend progress;
+        @extend .nes-progress;
+        display: block;
+        position: relative;
+        top: 96px;
+        z-index: -1;
+    }
+
+    &::after {
+        content: " ";
+        display: block;
+        background-color: map-get($primary-colors, "normal");
+        height: calc(48px - 8px);
+        position: relative;
+        top: 24px;
+        left: 8px;
+    }
+}
+
+@for $i from 0 through 100 {
+    progress-#{$i} {
+        @extend %progress;
+        &::after {
+            width: calc(#{$i}#{'%'} - 8px);
+        }
+    }
+}
+
+$social: twitter, github, linkedin, twitter, facebook, instagram, gmail, youtube, twitch, whatsapp, reddit;
+
+@each $soc in $social {
+    #{$soc}, .#{$soc}-link, box > .#{$soc}-link:last-child, box > #{$soc}:last-child{
+        @extend .nes-icon, .#{$soc}, .is-large;
+    }
 }
