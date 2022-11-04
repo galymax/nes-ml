@@ -11,8 +11,11 @@ Several workshops were conducted using NES.css before NES ML was created. I foun
 - Tag names based on common terms
 - No attributes
 - Minimal nesting required
+- Lots of pre-defined styling
+- Full structured page can be built only using simple tags
 
 ## Usage
+Include the 
 
 ## Tags
 The following tags are available
@@ -30,7 +33,30 @@ Same as `box` but all text is centered
     Content
 </intro>
 ```
+<img src="preview/intro.png" width="398">
 
+### `box-title`
+Headline of a `box` or `intro`
+```html
+<box>
+    <box-title>That's me</box-title>
+</box>
+```
+### `message`
+Black text box with white text
+```html
+ <message>Thanks for dropping by, stranger!</message>
+```
+### `headline`
+Headline
+```html
+<headline>Content</headline>
+```
+### Avatars
+| Tag               | Result        |
+| -------------     | ------------- |
+| `<ash></ash>`     | <img src="preview/ash.png" width="84"> |
+| `<mario></mario>` | Content Cell  |
 
 ## Compatibility
 Tested on
