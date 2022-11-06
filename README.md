@@ -2,6 +2,8 @@
 
 Simple markup language as enty point to learning HTML
 
+▶️ [Preview](https://galymax.github.io/nes-ml/)
+
 It was originally designed for a one-hour web dev workshop for people with no prior coding experience.
 
 ## Concept
