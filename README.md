@@ -17,7 +17,19 @@ Several workshops were conducted using NES.css before NES ML was created. I foun
 - Full structured page can be built only using simple tags
 
 ## Usage
-Include the 
+Include the
+- font
+- CSS
+- JS 
+in the `head` of your HTML document
+
+```html
+<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+<link rel="stylesheet" href="./css/styles.css">
+<script src="./js/nes-ml.js"></script>
+```
+
+- Use the NES ML tags to add content to the page
 
 ## Tags
 The following tags are available
