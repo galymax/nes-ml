@@ -36,7 +36,7 @@ body.append(codeContainer)
 
 // split page 50/50
 body.style.display = 'grid'
-body.style.gridTemplateColumns = '50% 50%'
+body.style.gridTemplateColumns = 'repeat(auto-fit, minmax(min(423px, 100%), 1fr))'
 
 function applyHighlightJS() {
     codeContainer.innerHTML = hljs && hljs.highlight(content, {language: 'HTML', ignoreIllegals: true}).value
