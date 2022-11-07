@@ -2,7 +2,8 @@
 
 Simple markup language as enty point to learning HTML
 
-▶️ [Preview](https://galymax.github.io/nes-ml/)
+▶️ [Preview](https://galymax.github.io/nes-ml/)  
+⌨️ [Try it](https://codepen.io/maximDCI/pen/rNKLBgv)
 
 It was originally designed for a one-hour web dev workshop for people with no prior coding experience.
 
@@ -71,6 +72,8 @@ Headline
 | -------------     | ------------- |
 | `<ash></ash>`     | <img src="preview/ash.png" width="84"> |
 | `<mario></mario>` | Content Cell  |
+
+### `progress-[0-100]`
 
 ## Compatibility
 Tested on
