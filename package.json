@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "sass scss/main.scss css/styles.css --style compressed"
+    "build": "node-sass scss/main.scss css/styles.css --output-style compressed --functions node_modules/nes.css/scripts/scssFunctions.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,8 @@
   "homepage": "https://github.com/galymax/nes-ml#readme",
   "dependencies": {
     "nes.css": "^2.3.0",
-    "sass": "^1.54.5"
+    "node-sass": "^8.0.0",
+    "file-type": "^11.0.0",
+    "git-rev-sync": "^1.12.0"
   }
 }
