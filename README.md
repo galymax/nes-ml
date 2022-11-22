@@ -23,7 +23,7 @@ Several workshops were conducted using [NES.css](https://nostalgic-css.github.io
 Include the
 - font
 - CSS
-- JS 
+- JS   
 in the `head` of your HTML document
 
 ```html
