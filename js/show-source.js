@@ -10,6 +10,7 @@ codeContainer.style.background = '#151515'
 codeContainer.style.padding = '2rem'
 codeContainer.style.color = 'white'
 codeContainer.style.fontSize = '.9rem'
+codeContainer.style.marginBottom = '0'
 
 // remove this script
 document.querySelector('script[src$="show-source.js"]').remove()
@@ -42,3 +43,17 @@ function applyHighlightJS() {
     codeContainer.innerHTML = hljs && hljs.highlight(content, {language: 'HTML', ignoreIllegals: true}).value
     //hljs && hljs.highlightElement(codeContainer)
 }
+
+// add github link
+const ghlink = document.createElement('a')
+const ghStyle = ghlink.style
+ghStyle.position = 'fixed'
+ghStyle.bottom = '6px'
+ghStyle.right = '4px'
+ghStyle.background = 'url("preview/github-logo-white.png") -20px'
+ghStyle.filter = 'drop-shadow(2px 3px 3px #aaa)'
+ghStyle.backgroundSize = 'cover'
+ghStyle.width = '5rem'
+ghStyle.height = '5rem'
+ghlink.href = 'https://github.com/galymax/nes-ml'
+body.append(ghlink)

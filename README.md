@@ -5,10 +5,12 @@ Simple markup language as enty point to learning HTML
 ▶️ [Preview](https://galymax.github.io/nes-ml/)  
 ⌨️ [Try it](https://codepen.io/maximDCI/pen/rNKLBgv)
 
-It was originally designed for a one-hour web dev workshop for people with no prior coding experience.
+It was originally designed for a one-hour web dev workshop for people with no prior coding experience. Get the workshop [slides](https://bit.ly/3V9QVVi).
+
+Based on [NES.css](https://nostalgic-css.github.io/NES.css/)
 
 ## Concept
-Several workshops were conducted using NES.css before NES ML was created. I found that getting used to the XML(HTML) syntax takes longer for people than the time available during a one-hour workshop. That's why NES ML was created to simplify the syntax while still producing for an appealing result.
+Several workshops were conducted using [NES.css](https://nostalgic-css.github.io/NES.css/) before NES ML was created. I found that getting used to the XML(HTML) syntax takes longer for people than the time available during a one-hour workshop. That's why NES ML was created to simplify the syntax while still producing for an appealing result.
 
 ### Key features
 - Tag names based on common terms
